@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99D2736F18200909739 /* AppDelegate.swift */; };
+		CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99F2736F18200909739 /* SceneDelegate.swift */; };
+		CF76C9A22736F18200909739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9A12736F18200909739 /* ViewController.swift */; };
+		CF76C9A52736F18200909739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF76C9A32736F18200909739 /* Main.storyboard */; };
+		CF76C9A72736F18400909739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF76C9A62736F18400909739 /* Assets.xcassets */; };
+		CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF76C9A82736F18400909739 /* LaunchScreen.storyboard */; };
+		CF76C9B52736F18400909739 /* elogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9B42736F18400909739 /* elogTests.swift */; };
+		CF76C9BF2736F18400909739 /* elogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9BE2736F18400909739 /* elogUITests.swift */; };
+		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF76C9B12736F18400909739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF76C9922736F18200909739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF76C9992736F18200909739;
+			remoteInfo = elog;
+		};
+		CF76C9BB2736F18400909739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF76C9922736F18200909739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF76C9992736F18200909739;
+			remoteInfo = elog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF76C99A2736F18200909739 /* elog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elog.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF76C99D2736F18200909739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF76C99F2736F18200909739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CF76C9A12736F18200909739 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF76C9A42736F18200909739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF76C9A62736F18400909739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF76C9A92736F18400909739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF76C9AB2736F18400909739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF76C9B02736F18400909739 /* elogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF76C9B42736F18400909739 /* elogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogTests.swift; sourceTree = "<group>"; };
+		CF76C9BA2736F18400909739 /* elogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = elogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF76C9BE2736F18400909739 /* elogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITests.swift; sourceTree = "<group>"; };
+		CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF76C9972736F18200909739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9AD2736F18400909739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9B72736F18400909739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF76C9912736F18200909739 = {
+			isa = PBXGroup;
+			children = (
+				CF76C99C2736F18200909739 /* elog */,
+				CF76C9B32736F18400909739 /* elogTests */,
+				CF76C9BD2736F18400909739 /* elogUITests */,
+				CF76C99B2736F18200909739 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF76C99B2736F18200909739 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF76C99A2736F18200909739 /* elog.app */,
+				CF76C9B02736F18400909739 /* elogTests.xctest */,
+				CF76C9BA2736F18400909739 /* elogUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF76C99C2736F18200909739 /* elog */ = {
+			isa = PBXGroup;
+			children = (
+				CF76C99D2736F18200909739 /* AppDelegate.swift */,
+				CF76C99F2736F18200909739 /* SceneDelegate.swift */,
+				CF76C9A12736F18200909739 /* ViewController.swift */,
+				CF76C9A32736F18200909739 /* Main.storyboard */,
+				CF76C9A62736F18400909739 /* Assets.xcassets */,
+				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
+				CF76C9AB2736F18400909739 /* Info.plist */,
+			);
+			path = elog;
+			sourceTree = "<group>";
+		};
+		CF76C9B32736F18400909739 /* elogTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF76C9B42736F18400909739 /* elogTests.swift */,
+			);
+			path = elogTests;
+			sourceTree = "<group>";
+		};
+		CF76C9BD2736F18400909739 /* elogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF76C9BE2736F18400909739 /* elogUITests.swift */,
+				CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */,
+			);
+			path = elogUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF76C9992736F18200909739 /* elog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF76C9C42736F18400909739 /* Build configuration list for PBXNativeTarget "elog" */;
+			buildPhases = (
+				CF76C9962736F18200909739 /* Sources */,
+				CF76C9972736F18200909739 /* Frameworks */,
+				CF76C9982736F18200909739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = elog;
+			productName = elog;
+			productReference = CF76C99A2736F18200909739 /* elog.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF76C9AF2736F18400909739 /* elogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF76C9C72736F18400909739 /* Build configuration list for PBXNativeTarget "elogTests" */;
+			buildPhases = (
+				CF76C9AC2736F18400909739 /* Sources */,
+				CF76C9AD2736F18400909739 /* Frameworks */,
+				CF76C9AE2736F18400909739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF76C9B22736F18400909739 /* PBXTargetDependency */,
+			);
+			name = elogTests;
+			productName = elogTests;
+			productReference = CF76C9B02736F18400909739 /* elogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF76C9B92736F18400909739 /* elogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF76C9CA2736F18400909739 /* Build configuration list for PBXNativeTarget "elogUITests" */;
+			buildPhases = (
+				CF76C9B62736F18400909739 /* Sources */,
+				CF76C9B72736F18400909739 /* Frameworks */,
+				CF76C9B82736F18400909739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF76C9BC2736F18400909739 /* PBXTargetDependency */,
+			);
+			name = elogUITests;
+			productName = elogUITests;
+			productReference = CF76C9BA2736F18400909739 /* elogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF76C9922736F18200909739 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					CF76C9992736F18200909739 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					CF76C9AF2736F18400909739 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CF76C9992736F18200909739;
+					};
+					CF76C9B92736F18400909739 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = CF76C9992736F18200909739;
+					};
+				};
+			};
+			buildConfigurationList = CF76C9952736F18200909739 /* Build configuration list for PBXProject "elog" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF76C9912736F18200909739;
+			productRefGroup = CF76C99B2736F18200909739 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF76C9992736F18200909739 /* elog */,
+				CF76C9AF2736F18400909739 /* elogTests */,
+				CF76C9B92736F18400909739 /* elogUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF76C9982736F18200909739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */,
+				CF76C9A72736F18400909739 /* Assets.xcassets in Resources */,
+				CF76C9A52736F18200909739 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9AE2736F18400909739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9B82736F18400909739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF76C9962736F18200909739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF76C9A22736F18200909739 /* ViewController.swift in Sources */,
+				CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */,
+				CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9AC2736F18400909739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF76C9B52736F18400909739 /* elogTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF76C9B62736F18400909739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF76C9BF2736F18400909739 /* elogUITests.swift in Sources */,
+				CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF76C9B22736F18400909739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF76C9992736F18200909739 /* elog */;
+			targetProxy = CF76C9B12736F18400909739 /* PBXContainerItemProxy */;
+		};
+		CF76C9BC2736F18400909739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF76C9992736F18200909739 /* elog */;
+			targetProxy = CF76C9BB2736F18400909739 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF76C9A32736F18200909739 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF76C9A42736F18200909739 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF76C9A82736F18400909739 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF76C9A92736F18400909739 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF76C9C22736F18400909739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF76C9C32736F18400909739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF76C9C52736F18400909739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = elog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF76C9C62736F18400909739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = elog/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elog;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF76C9C82736F18400909739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/elog.app/elog";
+			};
+			name = Debug;
+		};
+		CF76C9C92736F18400909739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/elog.app/elog";
+			};
+			name = Release;
+		};
+		CF76C9CB2736F18400909739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = elog;
+			};
+			name = Debug;
+		};
+		CF76C9CC2736F18400909739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DQ73LYF3NF;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kanstantin.elogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = elog;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF76C9952736F18200909739 /* Build configuration list for PBXProject "elog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF76C9C22736F18400909739 /* Debug */,
+				CF76C9C32736F18400909739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF76C9C42736F18400909739 /* Build configuration list for PBXNativeTarget "elog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF76C9C52736F18400909739 /* Debug */,
+				CF76C9C62736F18400909739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF76C9C72736F18400909739 /* Build configuration list for PBXNativeTarget "elogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF76C9C82736F18400909739 /* Debug */,
+				CF76C9C92736F18400909739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF76C9CA2736F18400909739 /* Build configuration list for PBXNativeTarget "elogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF76C9CB2736F18400909739 /* Debug */,
+				CF76C9CC2736F18400909739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF76C9922736F18200909739 /* Project object */;
+}
