@@ -9,9 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let colorBlue = #colorLiteral(red: 0.6690862775, green: 0.8058274388, blue: 0.9767666459, alpha: 1)
-    let colorYellow = #colorLiteral(red: 0.9572288394, green: 0.8463208079, blue: 0.6030815244, alpha: 1)
-    let colorPink = #colorLiteral(red: 0.9527825713, green: 0.7045833468, blue: 0.7854396701, alpha: 1)
+    let colorBlue   =   #colorLiteral(red: 0.6690862775, green: 0.8058274388, blue: 0.9767666459, alpha: 1)
+    let colorYellow =   #colorLiteral(red: 0.9572288394, green: 0.8463208079, blue: 0.6030815244, alpha: 1)
+    let colorPink   =   #colorLiteral(red: 0.9527825713, green: 0.7045833468, blue: 0.7854396701, alpha: 1)
 
     @IBOutlet var displayCards: [UIButton]!
     
@@ -52,6 +52,18 @@ class ViewController: UIViewController {
     ]
     
     
+    @IBAction func buttonPressed(_ button: UIButton) {
+        let index = displayCards.firstIndex(of: button)!
+        if let path = Bundle.main.path(forResource: "emocard-\(index)", ofType: "txt") {
+          do {
+              emCardText.text = try String(contentsOfFile: path, encoding: .utf8)
+          } catch {
+              
+          }
+        }
+    
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -67,14 +79,7 @@ class ViewController: UIViewController {
                 btn.backgroundColor = UIColor.systemBackground
             }
         }
-        if let path = Bundle.main.path(forResource: "emocard-33", ofType: "txt") {
-          do {
-              emCardText.text = try String(contentsOfFile: path, encoding: .utf8)
-          } catch {
-              
-          }
 
-        }
     }
 
 }
