@@ -17,6 +17,8 @@
 		CF76C9BF2736F18400909739 /* elogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9BE2736F18400909739 /* elogUITests.swift */; };
 		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
 		CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE4AB02738176F003F2D89 /* EmotionCard.swift */; };
+		CFCE4AB327383CD6003F2D89 /* emocard-0.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4AB227383CD6003F2D89 /* emocard-0.txt */; };
+		CFCE4AB527383E17003F2D89 /* emocard-33.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4AB427383E17003F2D89 /* emocard-33.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		CF76C9BE2736F18400909739 /* elogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITests.swift; sourceTree = "<group>"; };
 		CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CFCE4AB02738176F003F2D89 /* EmotionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCard.swift; sourceTree = "<group>"; };
+		CFCE4AB227383CD6003F2D89 /* emocard-0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "emocard-0.txt"; sourceTree = "<group>"; };
+		CFCE4AB427383E17003F2D89 /* emocard-33.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "emocard-33.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 				CF76C9A12736F18200909739 /* ViewController.swift */,
 				CF76C9A32736F18200909739 /* Main.storyboard */,
 				CF76C9A62736F18400909739 /* Assets.xcassets */,
+				CFCE4AB227383CD6003F2D89 /* emocard-0.txt */,
+				CFCE4AB427383E17003F2D89 /* emocard-33.txt */,
 				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
 				CF76C9AB2736F18400909739 /* Info.plist */,
 				CFCE4AB02738176F003F2D89 /* EmotionCard.swift */,
@@ -234,9 +240,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE4AB527383E17003F2D89 /* emocard-33.txt in Resources */,
 				CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */,
 				CF76C9A72736F18400909739 /* Assets.xcassets in Resources */,
 				CF76C9A52736F18200909739 /* Main.storyboard in Resources */,
+				CFCE4AB327383CD6003F2D89 /* emocard-0.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
