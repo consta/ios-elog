@@ -7,16 +7,18 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
     
     let colorBlue   =   #colorLiteral(red: 0.6690862775, green: 0.8058274388, blue: 0.9767666459, alpha: 1)
     let colorYellow =   #colorLiteral(red: 0.9572288394, green: 0.8463208079, blue: 0.6030815244, alpha: 1)
     let colorPink   =   #colorLiteral(red: 0.9527825713, green: 0.7045833468, blue: 0.7854396701, alpha: 1)
 
-    @IBOutlet var displayCards: [UIButton]!
+    // TODO: look if it is more reasonable to implement this using CollectionView
+    @IBOutlet private var displayCards: [UIButton]!
     
-    @IBOutlet weak var emCardText: UITextView!
+    @IBOutlet private weak var emCardText: UITextView!
     
+    // TODO: think about more readable representation (enum etc)
     lazy var emotionCards = [
         0: EmotionCard(number:1, position: 0, name: "Ужас", abbrevation: "U", color: colorBlue),
         
@@ -53,8 +55,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func buttonPressed(_ button: UIButton) {
+        // MARK: - some sample text
         let index = displayCards.firstIndex(of: button)!
-        if let path = Bundle.main.path(forResource: "emocard-\(index)", ofType: "txt") {
+        // TODO: implement caching
+        if let path = Bundle.main.path(forResource: "txt/emocard-\(index)", ofType: "txt") {
           do {
               emCardText.text = try String(contentsOfFile: path, encoding: .utf8)
           } catch {

@@ -7,31 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CF3C1D6A2739A96700F63727 /* emocard-30.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D692739A96700F63727 /* emocard-30.txt */; };
-		CF3C1D6D2739A9B500F63727 /* emocard-29.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D6B2739A9B500F63727 /* emocard-29.txt */; };
-		CF3C1D6E2739A9B500F63727 /* emocard-34.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D6C2739A9B500F63727 /* emocard-34.txt */; };
-		CF3C1D702739AAA900F63727 /* emocard-31.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D6F2739AAA800F63727 /* emocard-31.txt */; };
-		CF3C1D8E2739ABE100F63727 /* emocard-26.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D722739ABE000F63727 /* emocard-26.txt */; };
-		CF3C1D8F2739ABE100F63727 /* emocard-15.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D732739ABE000F63727 /* emocard-15.txt */; };
-		CF3C1D902739ABE100F63727 /* emocard-12.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D742739ABE000F63727 /* emocard-12.txt */; };
-		CF3C1D932739ABE100F63727 /* emocard-14.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D772739ABE000F63727 /* emocard-14.txt */; };
-		CF3C1D952739ABE100F63727 /* emocard-16.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D792739ABE000F63727 /* emocard-16.txt */; };
-		CF3C1D962739ABE100F63727 /* emocard-19.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D7A2739ABE000F63727 /* emocard-19.txt */; };
-		CF3C1D972739ABE100F63727 /* emocard-27.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D7B2739ABE000F63727 /* emocard-27.txt */; };
-		CF3C1D982739ABE100F63727 /* emocard-17.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D7C2739ABE000F63727 /* emocard-17.txt */; };
-		CF3C1D992739ABE100F63727 /* emocard-21.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D7D2739ABE000F63727 /* emocard-21.txt */; };
-		CF3C1D9A2739ABE100F63727 /* emocard-25.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D7E2739ABE000F63727 /* emocard-25.txt */; };
-		CF3C1D9E2739ABE100F63727 /* emocard-7.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D822739ABE100F63727 /* emocard-7.txt */; };
-		CF3C1DA02739ABE100F63727 /* emocard-18.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D842739ABE100F63727 /* emocard-18.txt */; };
-		CF3C1DA12739ABE100F63727 /* emocard-13.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D852739ABE100F63727 /* emocard-13.txt */; };
-		CF3C1DA22739ABE100F63727 /* emocard-22.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D862739ABE100F63727 /* emocard-22.txt */; };
-		CF3C1DA32739ABE100F63727 /* emocard-28.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D872739ABE100F63727 /* emocard-28.txt */; };
-		CF3C1DA42739ABE100F63727 /* emocard-20.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D882739ABE100F63727 /* emocard-20.txt */; };
-		CF3C1DA52739ABE100F63727 /* emocard-24.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D892739ABE100F63727 /* emocard-24.txt */; };
-		CF3C1DA62739ABE100F63727 /* emocard-9.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D8A2739ABE100F63727 /* emocard-9.txt */; };
-		CF3C1DA72739ABE100F63727 /* emocard-8.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D8B2739ABE100F63727 /* emocard-8.txt */; };
-		CF3C1DA82739ABE100F63727 /* emocard-23.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1D8C2739ABE100F63727 /* emocard-23.txt */; };
-		CF3C1DAA2739ADE000F63727 /* emocard-32.txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1DA92739ADE000F63727 /* emocard-32.txt */; };
+		CF3C1DAC2739B31000F63727 /* txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1DAB2739B31000F63727 /* txt */; };
 		CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99D2736F18200909739 /* AppDelegate.swift */; };
 		CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99F2736F18200909739 /* SceneDelegate.swift */; };
 		CF76C9A22736F18200909739 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9A12736F18200909739 /* ViewController.swift */; };
@@ -42,8 +18,6 @@
 		CF76C9BF2736F18400909739 /* elogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9BE2736F18400909739 /* elogUITests.swift */; };
 		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
 		CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE4AB02738176F003F2D89 /* EmotionCard.swift */; };
-		CFCE4AB327383CD6003F2D89 /* emocard-0.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4AB227383CD6003F2D89 /* emocard-0.txt */; };
-		CFCE4AB527383E17003F2D89 /* emocard-33.txt in Resources */ = {isa = PBXBuildFile; fileRef = CFCE4AB427383E17003F2D89 /* emocard-33.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,31 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CF3C1D692739A96700F63727 /* emocard-30.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-30.txt"; sourceTree = "<group>"; };
-		CF3C1D6B2739A9B500F63727 /* emocard-29.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-29.txt"; sourceTree = "<group>"; };
-		CF3C1D6C2739A9B500F63727 /* emocard-34.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-34.txt"; sourceTree = "<group>"; };
-		CF3C1D6F2739AAA800F63727 /* emocard-31.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-31.txt"; sourceTree = "<group>"; };
-		CF3C1D722739ABE000F63727 /* emocard-26.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-26.txt"; sourceTree = "<group>"; };
-		CF3C1D732739ABE000F63727 /* emocard-15.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-15.txt"; sourceTree = "<group>"; };
-		CF3C1D742739ABE000F63727 /* emocard-12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-12.txt"; sourceTree = "<group>"; };
-		CF3C1D772739ABE000F63727 /* emocard-14.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-14.txt"; sourceTree = "<group>"; };
-		CF3C1D792739ABE000F63727 /* emocard-16.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-16.txt"; sourceTree = "<group>"; };
-		CF3C1D7A2739ABE000F63727 /* emocard-19.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-19.txt"; sourceTree = "<group>"; };
-		CF3C1D7B2739ABE000F63727 /* emocard-27.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-27.txt"; sourceTree = "<group>"; };
-		CF3C1D7C2739ABE000F63727 /* emocard-17.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-17.txt"; sourceTree = "<group>"; };
-		CF3C1D7D2739ABE000F63727 /* emocard-21.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-21.txt"; sourceTree = "<group>"; };
-		CF3C1D7E2739ABE000F63727 /* emocard-25.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-25.txt"; sourceTree = "<group>"; };
-		CF3C1D822739ABE100F63727 /* emocard-7.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-7.txt"; sourceTree = "<group>"; };
-		CF3C1D842739ABE100F63727 /* emocard-18.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-18.txt"; sourceTree = "<group>"; };
-		CF3C1D852739ABE100F63727 /* emocard-13.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-13.txt"; sourceTree = "<group>"; };
-		CF3C1D862739ABE100F63727 /* emocard-22.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-22.txt"; sourceTree = "<group>"; };
-		CF3C1D872739ABE100F63727 /* emocard-28.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-28.txt"; sourceTree = "<group>"; };
-		CF3C1D882739ABE100F63727 /* emocard-20.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-20.txt"; sourceTree = "<group>"; };
-		CF3C1D892739ABE100F63727 /* emocard-24.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-24.txt"; sourceTree = "<group>"; };
-		CF3C1D8A2739ABE100F63727 /* emocard-9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-9.txt"; sourceTree = "<group>"; };
-		CF3C1D8B2739ABE100F63727 /* emocard-8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-8.txt"; sourceTree = "<group>"; };
-		CF3C1D8C2739ABE100F63727 /* emocard-23.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-23.txt"; sourceTree = "<group>"; };
-		CF3C1DA92739ADE000F63727 /* emocard-32.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "emocard-32.txt"; sourceTree = "<group>"; };
+		CF3C1DAB2739B31000F63727 /* txt */ = {isa = PBXFileReference; lastKnownFileType = folder; name = txt; path = elog/txt; sourceTree = "<group>"; };
 		CF76C99A2736F18200909739 /* elog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF76C99D2736F18200909739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF76C99F2736F18200909739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +53,6 @@
 		CF76C9BE2736F18400909739 /* elogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITests.swift; sourceTree = "<group>"; };
 		CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CFCE4AB02738176F003F2D89 /* EmotionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCard.swift; sourceTree = "<group>"; };
-		CFCE4AB227383CD6003F2D89 /* emocard-0.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "emocard-0.txt"; sourceTree = "<group>"; };
-		CFCE4AB427383E17003F2D89 /* emocard-33.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "emocard-33.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +83,7 @@
 		CF76C9912736F18200909739 = {
 			isa = PBXGroup;
 			children = (
+				CF3C1DAB2739B31000F63727 /* txt */,
 				CF76C99C2736F18200909739 /* elog */,
 				CF76C9B32736F18400909739 /* elogTests */,
 				CF76C9BD2736F18400909739 /* elogUITests */,
@@ -160,33 +109,6 @@
 				CF76C9A12736F18200909739 /* ViewController.swift */,
 				CF76C9A32736F18200909739 /* Main.storyboard */,
 				CF76C9A62736F18400909739 /* Assets.xcassets */,
-				CFCE4AB227383CD6003F2D89 /* emocard-0.txt */,
-				CF3C1D822739ABE100F63727 /* emocard-7.txt */,
-				CF3C1D8B2739ABE100F63727 /* emocard-8.txt */,
-				CF3C1D8A2739ABE100F63727 /* emocard-9.txt */,
-				CF3C1D742739ABE000F63727 /* emocard-12.txt */,
-				CF3C1D852739ABE100F63727 /* emocard-13.txt */,
-				CF3C1D772739ABE000F63727 /* emocard-14.txt */,
-				CF3C1D732739ABE000F63727 /* emocard-15.txt */,
-				CF3C1D792739ABE000F63727 /* emocard-16.txt */,
-				CF3C1D7C2739ABE000F63727 /* emocard-17.txt */,
-				CF3C1D842739ABE100F63727 /* emocard-18.txt */,
-				CF3C1D7A2739ABE000F63727 /* emocard-19.txt */,
-				CF3C1D882739ABE100F63727 /* emocard-20.txt */,
-				CF3C1D7D2739ABE000F63727 /* emocard-21.txt */,
-				CF3C1D862739ABE100F63727 /* emocard-22.txt */,
-				CF3C1D8C2739ABE100F63727 /* emocard-23.txt */,
-				CF3C1D892739ABE100F63727 /* emocard-24.txt */,
-				CF3C1D7E2739ABE000F63727 /* emocard-25.txt */,
-				CF3C1D722739ABE000F63727 /* emocard-26.txt */,
-				CF3C1D7B2739ABE000F63727 /* emocard-27.txt */,
-				CF3C1D872739ABE100F63727 /* emocard-28.txt */,
-				CF3C1D6B2739A9B500F63727 /* emocard-29.txt */,
-				CF3C1D692739A96700F63727 /* emocard-30.txt */,
-				CF3C1D6F2739AAA800F63727 /* emocard-31.txt */,
-				CF3C1DA92739ADE000F63727 /* emocard-32.txt */,
-				CFCE4AB427383E17003F2D89 /* emocard-33.txt */,
-				CF3C1D6C2739A9B500F63727 /* emocard-34.txt */,
 				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
 				CF76C9AB2736F18400909739 /* Info.plist */,
 				CFCE4AB02738176F003F2D89 /* EmotionCard.swift */,
@@ -315,36 +237,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF3C1D6D2739A9B500F63727 /* emocard-29.txt in Resources */,
-				CF3C1D8E2739ABE100F63727 /* emocard-26.txt in Resources */,
-				CFCE4AB527383E17003F2D89 /* emocard-33.txt in Resources */,
-				CF3C1DA52739ABE100F63727 /* emocard-24.txt in Resources */,
-				CF3C1D972739ABE100F63727 /* emocard-27.txt in Resources */,
-				CF3C1DAA2739ADE000F63727 /* emocard-32.txt in Resources */,
-				CF3C1DA22739ABE100F63727 /* emocard-22.txt in Resources */,
-				CF3C1DA72739ABE100F63727 /* emocard-8.txt in Resources */,
-				CF3C1D982739ABE100F63727 /* emocard-17.txt in Resources */,
-				CF3C1D6A2739A96700F63727 /* emocard-30.txt in Resources */,
-				CF3C1D702739AAA900F63727 /* emocard-31.txt in Resources */,
-				CF3C1D8F2739ABE100F63727 /* emocard-15.txt in Resources */,
-				CF3C1DA32739ABE100F63727 /* emocard-28.txt in Resources */,
-				CF3C1DA42739ABE100F63727 /* emocard-20.txt in Resources */,
-				CF3C1D9A2739ABE100F63727 /* emocard-25.txt in Resources */,
-				CF3C1D992739ABE100F63727 /* emocard-21.txt in Resources */,
-				CF3C1DA82739ABE100F63727 /* emocard-23.txt in Resources */,
-				CF3C1D932739ABE100F63727 /* emocard-14.txt in Resources */,
-				CF3C1DA02739ABE100F63727 /* emocard-18.txt in Resources */,
-				CF3C1D6E2739A9B500F63727 /* emocard-34.txt in Resources */,
-				CF3C1D9E2739ABE100F63727 /* emocard-7.txt in Resources */,
-				CF3C1D952739ABE100F63727 /* emocard-16.txt in Resources */,
-				CF3C1DA12739ABE100F63727 /* emocard-13.txt in Resources */,
-				CF3C1D902739ABE100F63727 /* emocard-12.txt in Resources */,
 				CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */,
 				CF76C9A72736F18400909739 /* Assets.xcassets in Resources */,
 				CF76C9A52736F18200909739 /* Main.storyboard in Resources */,
-				CF3C1D962739ABE100F63727 /* emocard-19.txt in Resources */,
-				CF3C1DA62739ABE100F63727 /* emocard-9.txt in Resources */,
-				CFCE4AB327383CD6003F2D89 /* emocard-0.txt in Resources */,
+				CF3C1DAC2739B31000F63727 /* txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
