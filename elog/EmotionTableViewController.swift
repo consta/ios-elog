@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class ViewController: UIViewController {
+final class EmotionTableViewController: UIViewController {
     
     let colorBlue   =   #colorLiteral(red: 0.6690862775, green: 0.8058274388, blue: 0.9767666459, alpha: 1)
     let colorYellow =   #colorLiteral(red: 0.9572288394, green: 0.8463208079, blue: 0.6030815244, alpha: 1)

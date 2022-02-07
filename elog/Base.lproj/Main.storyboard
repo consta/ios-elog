@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M41-N0-fuh">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Emotion Table View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="elog" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="EmotionTableViewController" customModule="elog" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="RC9-Eh-La8">
-                                <rect key="frame" x="0.0" y="50" width="414" height="154"/>
+                                <rect key="frame" x="0.0" y="94" width="414" height="154"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="FnC-ov-fCg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
@@ -329,7 +329,7 @@
                                 <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.80000000000000004"/>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fAk-wW-CUv">
-                                <rect key="frame" x="0.0" y="212" width="414" height="519"/>
+                                <rect key="frame" x="0.0" y="256" width="414" height="475"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
@@ -349,6 +349,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fAk-wW-CUv" secondAttribute="bottom" constant="5" id="yFW-he-8tM"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Enu-vd-TVy"/>
                     <connections>
                         <outlet property="emCardText" destination="fAk-wW-CUv" id="NNk-Zo-QC9"/>
                         <outlet property="view" destination="fAk-wW-CUv" id="BOP-g7-VnM"/>
@@ -391,7 +392,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="97.826086956521749"/>
+            <point key="canvasLocation" x="1068.1159420289855" y="97.826086956521749"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="Y9i-9d-2aL">
+            <objects>
+                <viewController id="2qS-gB-WwX" customClass="MainScreenViewController" customModule="elog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bLV-FA-zHp" customClass="MainScree">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eLog App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCj-YM-RDU">
+                                <rect key="frame" x="170.66666666666666" y="94" width="73" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u35-fX-K5I">
+                                <rect key="frame" x="167" y="189.33333333333334" width="80.333333333333314" height="70.000000000000028"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMB-1T-Mu4">
+                                        <rect key="frame" x="0.0" y="0.0" width="80.333333333333329" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Сегодня"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-IT-H5x">
+                                        <rect key="frame" x="0.0" y="39" width="80.333333333333329" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Таблица"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="e9P-Vq-MI4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nIU-RX-eC8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TCj-YM-RDU" firstAttribute="top" secondItem="nIU-RX-eC8" secondAttribute="top" constant="50" id="Hpk-N4-7Zn"/>
+                            <constraint firstItem="TCj-YM-RDU" firstAttribute="centerX" secondItem="nIU-RX-eC8" secondAttribute="centerX" id="OEO-nd-FxG"/>
+                            <constraint firstItem="u35-fX-K5I" firstAttribute="centerX" secondItem="nIU-RX-eC8" secondAttribute="centerX" id="tfE-Vt-tgF"/>
+                            <constraint firstItem="xMB-1T-Mu4" firstAttribute="top" secondItem="TCj-YM-RDU" secondAttribute="bottom" constant="75" id="ylU-yU-jim"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="MJ8-zL-Xv2"/>
+                    <connections>
+                        <outlet property="appTitleLabel" destination="TCj-YM-RDU" id="xF8-1X-g97"/>
+                        <outlet property="dayViewButton" destination="xMB-1T-Mu4" id="Fmv-bH-7RK"/>
+                        <outlet property="emotionsTableViewButton" destination="YUW-IT-H5x" id="wah-F9-z10"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="psT-oH-x0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="97.826086956521749"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JM2-oU-4dG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="M41-N0-fuh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iE2-mc-Iiy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2qS-gB-WwX" kind="relationship" relationship="rootViewController" id="ajf-XW-SQy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dto-Bt-8vr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-791.304347826087" y="97.826086956521749"/>
         </scene>
     </scenes>
     <resources>
