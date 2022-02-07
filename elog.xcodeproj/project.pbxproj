@@ -18,6 +18,7 @@
 		CF76C9BF2736F18400909739 /* elogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9BE2736F18400909739 /* elogUITests.swift */; };
 		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
 		CF9837CE27B19E3A004C0AB8 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */; };
+		CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */; };
 		CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE4AB02738176F003F2D89 /* EmotionCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		CF76C9BE2736F18400909739 /* elogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITests.swift; sourceTree = "<group>"; };
 		CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		CFCE4AB02738176F003F2D89 /* EmotionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
 				CF76C9AB2736F18400909739 /* Info.plist */,
 				CFCE4AB02738176F003F2D89 /* EmotionCard.swift */,
+				CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */,
 			);
 			path = elog;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */,
 				CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */,
 				CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */,
+				CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

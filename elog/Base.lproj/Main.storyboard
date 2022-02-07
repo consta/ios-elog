@@ -415,6 +415,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="80.333333333333329" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Сегодня"/>
+                                        <connections>
+                                            <segue destination="HBd-DA-FOm" kind="show" id="kM6-ag-Rc4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-IT-H5x">
                                         <rect key="frame" x="0.0" y="39" width="80.333333333333329" height="31"/>
@@ -447,6 +450,51 @@
             </objects>
             <point key="canvasLocation" x="115.94202898550725" y="97.826086956521749"/>
         </scene>
+        <!--Day View Controller-->
+        <scene sceneID="LOq-Zt-07K">
+            <objects>
+                <tableViewController id="HBd-DA-FOm" customClass="DayViewController" customModule="elog" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="jtT-5I-Oo1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayViewCellType" textLabel="iKf-Ah-AbH" detailTextLabel="kRc-Xa-90o" style="IBUITableViewCellStyleValue1" id="BV8-3b-QfD">
+                                <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="61.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BV8-3b-QfD" id="BMO-wY-1My">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="61.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="23:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iKf-Ah-AbH">
+                                            <rect key="frame" x="20" y="16" width="65.666666666666671" height="30"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="textColor" systemColor="systemBlueColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kRc-Xa-90o">
+                                            <rect key="frame" x="345.66666666666669" y="22" width="48.333333333333336" height="23"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                            <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HBd-DA-FOm" id="7za-P4-0jn"/>
+                            <outlet property="delegate" destination="HBd-DA-FOm" id="3kz-lx-ayO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="9mf-fz-bGO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5UA-Kg-Qw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015.9420289855074" y="857.60869565217399"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="JM2-oU-4dG">
             <objects>
@@ -470,8 +518,14 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
