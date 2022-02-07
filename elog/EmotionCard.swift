@@ -5,7 +5,6 @@
 //  Created by Kanstantin Kachanouski on 7.11.21.
 //
 
-import Foundation
 import UIKit
 
 struct EmotionCard {
