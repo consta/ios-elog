@@ -336,11 +336,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTG-60-mpw">
+                                <rect key="frame" x="20.000000000000004" y="55.000000000000007" width="41.333333333333343" height="20.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fAk-wW-CUv" firstAttribute="top" secondItem="RC9-Eh-La8" secondAttribute="bottom" constant="8" symbolic="YES" id="2dx-ui-HhH"/>
+                            <constraint firstItem="kTG-60-mpw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="11" id="DaN-qO-Ulb"/>
+                            <constraint firstItem="kTG-60-mpw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HpZ-S7-vNU"/>
                             <constraint firstItem="RC9-Eh-La8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Ubx-Mj-kpM"/>
                             <constraint firstItem="RC9-Eh-La8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="a7D-3N-bxM"/>
                             <constraint firstItem="RC9-Eh-La8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="aRP-Kf-Oqv"/>
@@ -351,6 +359,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Enu-vd-TVy"/>
                     <connections>
+                        <outlet property="dateLabel" destination="kTG-60-mpw" id="048-bk-KHA"/>
                         <outlet property="emCardText" destination="fAk-wW-CUv" id="NNk-Zo-QC9"/>
                         <outlet property="view" destination="fAk-wW-CUv" id="BOP-g7-VnM"/>
                         <outletCollection property="displayCards" destination="9Uk-7R-1aV" collectionClass="NSMutableArray" id="MOd-6R-Tpa"/>
@@ -482,6 +491,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" destinationCreationSelector="pickupEmotion:sender:" id="25o-Pp-nm1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -493,7 +505,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5UA-Kg-Qw4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1015.9420289855074" y="857.60869565217399"/>
+            <point key="canvasLocation" x="309" y="862"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="JM2-oU-4dG">
@@ -514,6 +526,9 @@
             <point key="canvasLocation" x="-791.304347826087" y="97.826086956521749"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="25o-Pp-nm1"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

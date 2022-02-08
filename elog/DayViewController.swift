@@ -17,14 +17,9 @@ class DayViewController : UITableViewController {
         super.viewDidLoad()
         let rows = tableView.numberOfRows(inSection: 0)
         print("rows = \(rows)")
-        let date = Date()
-        var calendar = Calendar.current
-        let hours = calendar.component(.hour, from: date)
-        let minutes = calendar.component(.minute, from: date)
-        let position = ((minutes + hours * 60) - dailyGridBeginFromMin) / dailyGridPeriodMin
-        print("index position = \(position)")
-        //MARK: ask - how to scroll to specific cell ?
-        
+        let indexPath = dateToIndexPath(date: Date())
+        tableView.scrollToRow(at: indexPath, at: .top, animated: true)
+    
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -44,6 +39,28 @@ class DayViewController : UITableViewController {
         let hours = dayMinutes / 60
         let minutes = dayMinutes % 60
         return String(format: "%02d:%02d",  arguments: [hours, minutes])
+    }
+    
+    private func dateToIndexPath(date: Date) -> IndexPath {
+        let calendar = Calendar.current
+        let hours = calendar.component(.hour, from: date)
+        let minutes = calendar.component(.minute, from: date)
+        let position = ((minutes + hours * 60) - dailyGridBeginFromMin) / dailyGridPeriodMin
+        return IndexPath(row: position, section: 0)
+    }
+    
+    private func indexPathToDate(indexPath: IndexPath) -> Date {
+        let minutesDay = dailyGridPeriodMin * indexPath.row
+        let hours = minutesDay / 60;
+        let minutes = minutesDay % 60;
+        return Calendar.current.date(bySettingHour: hours, minute: minutes, second: 0, of: Date())!
+    }
+    
+    @IBSegueAction func pickupEmotion(_ coder: NSCoder, sender: Any?) -> EmotionTableViewController? {
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("No rows selected!")
+        }
+        return EmotionTableViewController(coder: coder, forDate: indexPathToDate(indexPath: indexPath))
     }
 }
 

@@ -13,10 +13,14 @@ final class EmotionTableViewController: UIViewController {
     let colorYellow =   #colorLiteral(red: 0.9572288394, green: 0.8463208079, blue: 0.6030815244, alpha: 1)
     let colorPink   =   #colorLiteral(red: 0.9527825713, green: 0.7045833468, blue: 0.7854396701, alpha: 1)
 
+    let forDate: Date?
+    
     // TODO: look if it is more reasonable to implement this using CollectionView
     @IBOutlet private var displayCards: [UIButton]!
     
     @IBOutlet private weak var emCardText: UITextView!
+    
+    @IBOutlet weak var dateLabel: UILabel!
     
     // TODO: think about more readable representation (enum etc)
     lazy var emotionCards = [
@@ -83,8 +87,30 @@ final class EmotionTableViewController: UIViewController {
                 btn.backgroundColor = UIColor.systemBackground
             }
         }
-
+        if forDate != nil {
+            navigationItem.rightBarButtonItem = UIBarButtonItem(title:"Add", style: .plain, target: self, action: #selector(addTapped))
+        }
+        let date = forDate ?? Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+        let dateValue = dateFormatter.string(from: date)
+        print("dateValue = \(dateValue)")
+        dateLabel.text = dateValue
+    }
+    
+    required init?(coder: NSCoder) {
+        //fatalError("This should never be called")
+        self.forDate = Date()
+        super.init(coder: coder)
+    }
+    
+    init?(coder: NSCoder, forDate: Date?) {
+        self.forDate = forDate
+        super.init(coder: coder)
     }
 
+    @objc func addTapped() {
+        
+    }
 }
 
