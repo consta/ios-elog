@@ -19,6 +19,11 @@
 		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
 		CF9837CE27B19E3A004C0AB8 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */; };
 		CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */; };
+		CF9837D327B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */; };
+		CFAB380E27B51D1400FA6EDC /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = CFAB380D27B51D1400FA6EDC /* SQLite */; };
+		CFAB381027B51FAF00FA6EDC /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CFAB380F27B51FAF00FA6EDC /* db.sqlite */; };
+		CFAB381227B52B0B00FA6EDC /* EmotionLogOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */; };
+		CFAB381427B52E1300FA6EDC /* EmotionLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */; };
 		CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE4AB02738176F003F2D89 /* EmotionCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,10 @@
 		CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = elogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
+		CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmotionLogModel.xcdatamodel; sourceTree = "<group>"; };
+		CFAB380F27B51FAF00FA6EDC /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionLogOperations.swift; sourceTree = "<group>"; };
+		CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionLogEntry.swift; sourceTree = "<group>"; };
 		CFCE4AB02738176F003F2D89 /* EmotionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAB380E27B51D1400FA6EDC /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +118,20 @@
 		CF76C99C2736F18200909739 /* elog */ = {
 			isa = PBXGroup;
 			children = (
+				CFAB380F27B51FAF00FA6EDC /* db.sqlite */,
 				CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */,
 				CF76C99D2736F18200909739 /* AppDelegate.swift */,
 				CF76C99F2736F18200909739 /* SceneDelegate.swift */,
 				CF76C9A12736F18200909739 /* EmotionTableViewController.swift */,
 				CF76C9A32736F18200909739 /* Main.storyboard */,
+				CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */,
 				CF76C9A62736F18400909739 /* Assets.xcassets */,
 				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
 				CF76C9AB2736F18400909739 /* Info.plist */,
 				CFCE4AB02738176F003F2D89 /* EmotionCard.swift */,
 				CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */,
+				CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */,
+				CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */,
 			);
 			path = elog;
 			sourceTree = "<group>";
@@ -155,6 +169,9 @@
 			dependencies = (
 			);
 			name = elog;
+			packageProductDependencies = (
+				CFAB380D27B51D1400FA6EDC /* SQLite */,
+			);
 			productName = elog;
 			productReference = CF76C99A2736F18200909739 /* elog.app */;
 			productType = "com.apple.product-type.application";
@@ -227,6 +244,9 @@
 				Base,
 			);
 			mainGroup = CF76C9912736F18200909739;
+			packageReferences = (
+				CFAB380C27B51D1400FA6EDC /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = CF76C99B2736F18200909739 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -243,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFAB381027B51FAF00FA6EDC /* db.sqlite in Resources */,
 				CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */,
 				CF76C9A72736F18400909739 /* Assets.xcassets in Resources */,
 				CF76C9A52736F18200909739 /* Main.storyboard in Resources */,
@@ -277,6 +298,9 @@
 				CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */,
 				CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */,
 				CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */,
+				CFAB381427B52E1300FA6EDC /* EmotionLogEntry.swift in Sources */,
+				CF9837D327B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld in Sources */,
+				CFAB381227B52B0B00FA6EDC /* EmotionLogOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +666,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CFAB380C27B51D1400FA6EDC /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CFAB380D27B51D1400FA6EDC /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CFAB380C27B51D1400FA6EDC /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */,
+			);
+			currentVersion = CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */;
+			path = EmotionLogModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CF76C9922736F18200909739 /* Project object */;
 }

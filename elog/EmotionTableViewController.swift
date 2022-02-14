@@ -109,8 +109,8 @@ final class EmotionTableViewController: UIViewController {
         super.init(coder: coder)
     }
 
-    @objc func addTapped() {
-        
+    @objc func addTapped(_ sender: Any) {
+        print("Here.")
     }
 }
 

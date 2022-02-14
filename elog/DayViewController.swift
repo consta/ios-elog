@@ -29,8 +29,12 @@ class DayViewController : UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "dayViewCellType", for: indexPath)
 
-        cell.textLabel?.text = minToString(dayMinutes: dailyGridBeginFromMin + (dailyGridPeriodMin * indexPath.row))
-        cell.detailTextLabel?.text = ""
+        guard let cell = cell as? DayViewCell else {
+            fatalError("Should not be!")
+        }
+        
+        cell.timeLabel?.text = minToString(dayMinutes: dailyGridBeginFromMin + (dailyGridPeriodMin * indexPath.row))
+        cell.emotionLabel?.text = ""
         
         return cell
     }
@@ -64,8 +68,10 @@ class DayViewController : UITableViewController {
     }
 }
 
+
 // MARK: ask why it doesn't work
 class DayViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel?
     @IBOutlet weak var emotionLabel: UILabel?
 }
+
