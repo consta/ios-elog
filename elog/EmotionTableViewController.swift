@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreData
 
 final class EmotionTableViewController: UIViewController {
     
@@ -14,6 +15,8 @@ final class EmotionTableViewController: UIViewController {
     let colorPink   =   #colorLiteral(red: 0.9527825713, green: 0.7045833468, blue: 0.7854396701, alpha: 1)
 
     let forDate: Date?
+    
+    var logEntries: [NSManagedObject] = []
     
     // TODO: look if it is more reasonable to implement this using CollectionView
     @IBOutlet private var displayCards: [UIButton]!
@@ -65,11 +68,15 @@ final class EmotionTableViewController: UIViewController {
         if let path = Bundle.main.path(forResource: "txt/emocard-\(index)", ofType: "txt") {
           do {
               emCardText.text = try String(contentsOfFile: path, encoding: .utf8)
-          } catch {
-              
+          } catch let error as NSError {
+              fatalError(error.localizedDescription)
           }
         }
-    
+        
+        displayCards
+            .filter {card in return card.layer.borderWidth > 0}
+            .forEach {card in card.layer.borderWidth = 0}
+        button.layer.borderWidth = 3
     }
     
     override func viewDidLoad() {
@@ -77,11 +84,11 @@ final class EmotionTableViewController: UIViewController {
         // Do any additional setup after loading the view.
         for btn in displayCards {
             let index = displayCards.firstIndex(of: btn)!
-            let emotionCard = emotionCards[index]
-            if emotionCard != nil {
+            let emotionType = EmotionType.getByPosition(position: index)
+            if let emotionType = emotionType {
                 btn.setTitleColor(UIColor.black, for: .normal)
-                btn.setTitle(emotionCard?.abbrevation, for: UIControl.State.normal)
-                btn.backgroundColor = emotionCard?.color
+                btn.setTitle(emotionType.attributes.abbrevation, for: UIControl.State.normal)
+                btn.backgroundColor = emotionType.attributes.color
             }
             else {
                 btn.backgroundColor = UIColor.systemBackground
@@ -110,7 +117,35 @@ final class EmotionTableViewController: UIViewController {
     }
 
     @objc func addTapped(_ sender: Any) {
-        print("Here.")
+        guard let appDelegate =
+          UIApplication.shared.delegate as? AppDelegate else {
+          return
+        }
+        
+        // 1
+        let managedContext =
+          appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity =
+          NSEntityDescription.entity(forEntityName: "EmotionLogEntry",
+                                     in: managedContext)!
+        
+        let logEntry = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        
+        // 3
+        logEntry.setValue(emotionSelected, forKeyPath: "emotionId")
+        logEntry.setValue(30, forKeyPath: "duration")
+        logEntry.setValue(forDate, forKeyPath: "timestamp")
+        
+        // 4
+        do {
+          try managedContext.save()
+            print("saved")
+        } catch let error as NSError {
+          print("Could not save. \(error), \(error.userInfo)")
+        }
     }
 }
 

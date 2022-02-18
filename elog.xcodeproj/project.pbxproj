@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF18A97327BCFEA00068EF95 /* EmotionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18A97227BCFEA00068EF95 /* EmotionType.swift */; };
 		CF3C1DAC2739B31000F63727 /* txt in Resources */ = {isa = PBXBuildFile; fileRef = CF3C1DAB2739B31000F63727 /* txt */; };
 		CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99D2736F18200909739 /* AppDelegate.swift */; };
 		CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C99F2736F18200909739 /* SceneDelegate.swift */; };
@@ -19,11 +20,10 @@
 		CF76C9C12736F18400909739 /* elogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF76C9C02736F18400909739 /* elogUITestsLaunchTests.swift */; };
 		CF9837CE27B19E3A004C0AB8 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */; };
 		CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */; };
-		CF9837D327B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */; };
+		CF9837D327B28F1A004C0AB8 /* EmotionLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF9837D127B28F1A004C0AB8 /* EmotionLog.xcdatamodeld */; };
 		CFAB380E27B51D1400FA6EDC /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = CFAB380D27B51D1400FA6EDC /* SQLite */; };
-		CFAB381027B51FAF00FA6EDC /* db.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CFAB380F27B51FAF00FA6EDC /* db.sqlite */; };
+		CFAB381027B51FAF00FA6EDC /* EmotionLog.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = CFAB380F27B51FAF00FA6EDC /* EmotionLog.sqlite */; };
 		CFAB381227B52B0B00FA6EDC /* EmotionLogOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */; };
-		CFAB381427B52E1300FA6EDC /* EmotionLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */; };
 		CFCE4AB12738176F003F2D89 /* EmotionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE4AB02738176F003F2D89 /* EmotionCard.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF18A97227BCFEA00068EF95 /* EmotionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionType.swift; sourceTree = "<group>"; };
 		CF3C1DAB2739B31000F63727 /* txt */ = {isa = PBXFileReference; lastKnownFileType = folder; name = txt; path = elog/txt; sourceTree = "<group>"; };
 		CF76C99A2736F18200909739 /* elog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = elog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF76C99D2736F18200909739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,9 +63,8 @@
 		CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayViewController.swift; sourceTree = "<group>"; };
 		CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmotionLogModel.xcdatamodel; sourceTree = "<group>"; };
-		CFAB380F27B51FAF00FA6EDC /* db.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = db.sqlite; sourceTree = "<group>"; };
+		CFAB380F27B51FAF00FA6EDC /* EmotionLog.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = EmotionLog.sqlite; sourceTree = "<group>"; };
 		CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionLogOperations.swift; sourceTree = "<group>"; };
-		CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionLogEntry.swift; sourceTree = "<group>"; };
 		CFCE4AB02738176F003F2D89 /* EmotionCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,20 +118,20 @@
 		CF76C99C2736F18200909739 /* elog */ = {
 			isa = PBXGroup;
 			children = (
-				CFAB380F27B51FAF00FA6EDC /* db.sqlite */,
+				CFAB380F27B51FAF00FA6EDC /* EmotionLog.sqlite */,
 				CF9837CD27B19E3A004C0AB8 /* MainScreenViewController.swift */,
 				CF76C99D2736F18200909739 /* AppDelegate.swift */,
 				CF76C99F2736F18200909739 /* SceneDelegate.swift */,
 				CF76C9A12736F18200909739 /* EmotionTableViewController.swift */,
 				CF76C9A32736F18200909739 /* Main.storyboard */,
-				CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */,
+				CF9837D127B28F1A004C0AB8 /* EmotionLog.xcdatamodeld */,
 				CF76C9A62736F18400909739 /* Assets.xcassets */,
 				CF76C9A82736F18400909739 /* LaunchScreen.storyboard */,
 				CF76C9AB2736F18400909739 /* Info.plist */,
 				CFCE4AB02738176F003F2D89 /* EmotionCard.swift */,
 				CF9837CF27B1A5EF004C0AB8 /* DayViewController.swift */,
 				CFAB381127B52B0B00FA6EDC /* EmotionLogOperations.swift */,
-				CFAB381327B52E1300FA6EDC /* EmotionLogEntry.swift */,
+				CF18A97227BCFEA00068EF95 /* EmotionType.swift */,
 			);
 			path = elog;
 			sourceTree = "<group>";
@@ -162,6 +162,7 @@
 			buildPhases = (
 				CF76C9962736F18200909739 /* Sources */,
 				CF76C9972736F18200909739 /* Frameworks */,
+				CFB0FDAC27BECC7A00ADDD55 /* ShellScript */,
 				CF76C9982736F18200909739 /* Resources */,
 			);
 			buildRules = (
@@ -263,7 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFAB381027B51FAF00FA6EDC /* db.sqlite in Resources */,
+				CFAB381027B51FAF00FA6EDC /* EmotionLog.sqlite in Resources */,
 				CF76C9AA2736F18400909739 /* LaunchScreen.storyboard in Resources */,
 				CF76C9A72736F18400909739 /* Assets.xcassets in Resources */,
 				CF76C9A52736F18200909739 /* Main.storyboard in Resources */,
@@ -287,6 +288,26 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFB0FDAC27BECC7A00ADDD55 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF76C9962736F18200909739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,8 +319,8 @@
 				CF76C99E2736F18200909739 /* AppDelegate.swift in Sources */,
 				CF76C9A02736F18200909739 /* SceneDelegate.swift in Sources */,
 				CF9837D027B1A5EF004C0AB8 /* DayViewController.swift in Sources */,
-				CFAB381427B52E1300FA6EDC /* EmotionLogEntry.swift in Sources */,
-				CF9837D327B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld in Sources */,
+				CF9837D327B28F1A004C0AB8 /* EmotionLog.xcdatamodeld in Sources */,
+				CF18A97327BCFEA00068EF95 /* EmotionType.swift in Sources */,
 				CFAB381227B52B0B00FA6EDC /* EmotionLogOperations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,13 +708,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		CF9837D127B28F1A004C0AB8 /* EmotionLogModel.xcdatamodeld */ = {
+		CF9837D127B28F1A004C0AB8 /* EmotionLog.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */,
 			);
 			currentVersion = CF9837D227B28F1A004C0AB8 /* EmotionLogModel.xcdatamodel */;
-			path = EmotionLogModel.xcdatamodeld;
+			path = EmotionLog.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
