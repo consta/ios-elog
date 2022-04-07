@@ -21,7 +21,6 @@ class DayViewController : UITableViewController {
         print("rows = \(rows)")
         let indexPath = dateToIndexPath(date: Date())
         tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -39,25 +38,32 @@ class DayViewController : UITableViewController {
         let record = logEntries[indexPath.row]
         if record != nil {
             let emotionId = record?.value(forKey: "emotionId") as! Int
-            cell.emotionLabel?.text = String(format: "%d", emotionId)
+            let emotion = EmotionType.init(rawValue: emotionId)
+            cell.emotionLabel?.text = emotion?.attributes.name
+            cell.emotionLabel?.backgroundColor = emotion?.attributes.color
             
         } else {
             cell.emotionLabel?.text = ""
+            cell.emotionLabel?.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
         return cell
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        reload()
+        tableView.reloadData()
+    }
+
+    
+    private func reload() {
         //1
         guard let appDelegate =
                 UIApplication.shared.delegate as? AppDelegate else {
                     return
                 }
         
-        let managedContext =
-        appDelegate.persistentContainer.viewContext
+        let managedContext = appDelegate.persistentContainer.viewContext
         
         //2
         let calendar = Calendar.current
@@ -108,7 +114,16 @@ class DayViewController : UITableViewController {
         guard let indexPath = tableView.indexPathForSelectedRow else {
             fatalError("No rows selected!")
         }
-        return EmotionTableViewController(coder: coder, forDate: indexPathToDate(indexPath: indexPath))
+        
+        var selectedEmotion: EmotionType? = nil
+        
+        if let record = logEntries[indexPath.row] {
+            let emotionId = record.value(forKey: "emotionId") as! Int
+            selectedEmotion = EmotionType.init(rawValue: emotionId)
+        }
+        
+        let result = EmotionTableViewController(coder: coder, forDate: indexPathToDate(indexPath: indexPath), preselected: selectedEmotion)
+        return result
     }
 }
 
